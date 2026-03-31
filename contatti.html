@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatti — Vela Notte</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --nero: #100D1A; --rosa: #D4849C; --oro: #C9A96E; --bianco: #FAF7F5; --grigio: #8B8590; --bg: #0F0B18; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--bianco); font-family: 'Inter', sans-serif; }
+  header { padding: 18px 24px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .logo { font-family: 'Playfair Display', serif; font-size: 24px; letter-spacing: 4px; text-transform: uppercase; }
+  .logo span { color: var(--rosa); }
+  .content { max-width: 560px; margin: 0 auto; padding: 48px 24px 80px; text-align: center; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 12px; }
+  .subtitle { font-size: 15px; color: #B0A8B4; line-height: 1.7; margin-bottom: 48px; }
+  .contact-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact-icon { font-size: 28px; flex-shrink: 0; }
+  .contact-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--oro); margin-bottom: 4px; }
+  .contact-value { font-size: 15px; font-weight: 500; color: var(--bianco); }
+  .contact-note { font-size: 12px; color: var(--grigio); margin-top: 4px; }
+  a { color: var(--rosa); text-decoration: none; }
+  .response-time {
+    background: rgba(212,132,156,0.06);
+    border: 1px solid rgba(212,132,156,0.15);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: #B0A8B4;
+    margin-top: 32px;
+    line-height: 1.7;
+  }
+  footer { text-align: center; padding: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: var(--grigio); }
+  footer a { color: var(--grigio); text-decoration: none; margin: 0 10px; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" style="text-decoration:none;">
+    <div class="logo">Vela <span>Notte</span></div>
+  </a>
+</header>
+
+<div class="content">
+  <h1>Contatti</h1>
+  <p class="subtitle">Hai domande su un ordine, una spedizione o il prodotto?<br>Siamo qui per aiutarti.</p>
+
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div>
+      <div class="contact-label">Email assistenza</div>
+      <div class="contact-value"><a href="mailto:velanotte@supporto.com">velanotte@supporto.com</a></div>
+      <div class="contact-note">Risposta entro 24–48 ore lavorative</div>
+    </div>
+  </div>
+
+  <div class="response-time">
+    <strong style="color:var(--bianco);">📦 Hai già ordinato?</strong><br>
+    Inserisci il numero d'ordine nella tua email — ti risponderemo più velocemente.
+    Il numero si trova nell'email di conferma ordine che ti abbiamo inviato.
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">← Torna al negozio</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="rimborsi.html">Rimborsi</a>
+</footer>
+
+</body>
+</html>
