@@ -419,7 +419,24 @@
 <body>
 
 <!-- BANNER -->
-<div class="top-bar">✦ Spedizione tracciata · Pagamento sicuro · Assistenza clienti</div>
+<div class="top-bar">🔥 OFFERTA LANCIO: Spedizione GRATUITA in Italia · Scorte limitate · <span id="countdown-bar"></span></div>
+<script>
+(function(){
+  var end = new Date();
+  end.setHours(23,59,59,0);
+  function tick(){
+    var now = new Date();
+    var diff = Math.max(0, end - now);
+    var h = Math.floor(diff/3600000);
+    var m = Math.floor((diff%3600000)/60000);
+    var s = Math.floor((diff%60000)/1000);
+    var el = document.getElementById('countdown-bar');
+    if(el) el.textContent = 'Scade tra ' + h + 'h ' + pad(m) + 'm ' + pad(s) + 's';
+  }
+  function pad(n){ return n < 10 ? '0'+n : n; }
+  tick(); setInterval(tick, 1000);
+})();
+</script>
 
 <!-- HEADER -->
 <header>
@@ -454,6 +471,7 @@
     <p class="price-new" id="price-new">€16,90</p>
     <span class="price-badge">-43% · SOLO OGGI</span>
     <a href="https://an1i5s-vn.myshopify.com/cart/53570563113301:1" class="cta-btn" id="cta-main">ORDINA ORA — €16,90</a>
+    <p style="text-align:center;font-size:12px;color:#D4849C;margin:8px 0 0;">🔥 <strong>14 persone</strong> stanno guardando questo prodotto ora</p>
     <div class="guarantee-line">
       <span>🛡️</span>
       <span><strong>Soddisfatta o rimborsata — 30 giorni</strong> · Pagamento sicuro · Spedizione tracciata</span>
